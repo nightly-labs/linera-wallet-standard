@@ -1,5 +1,5 @@
 /** Version of the feature. */
-export type LineraSignAndSubmitTransactionVersion = '1.1.0'
+export type LineraSignAndSubmitTransactionVersion = '1.0.0'
 
 /** Name of the feature. */
 export const LineraSignAndSubmitTransactionNamespace = 'linera:signAndSubmitTransaction'

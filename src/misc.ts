@@ -1,5 +1,6 @@
 export type TransactionHash = `0x${string}`
 export type ChainId = string
+export type AppId = string
 export type Unsubscribe = () => void
 export enum Network {
   MAINNET = 'mainnet',

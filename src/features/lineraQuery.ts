@@ -1,4 +1,4 @@
-import { ChainId } from '../misc'
+import { AppId, ChainId } from '../misc'
 
 /** Version of the feature. */
 export type QueryVersion = '1.0.0'
@@ -18,7 +18,7 @@ export type QueryFeature = {
 export type QueryMethod = (input: QueryInput) => Promise<QueryOutput>
 
 export type QueryInput = {
-  chainId: ChainId
+  appId: AppId
   query: string
   variables?: object
 }

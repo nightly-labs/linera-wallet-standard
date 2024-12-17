@@ -1,5 +1,4 @@
 import type { IdentifierRecord, WalletWithFeatures } from '@wallet-standard/core'
-import type { LineraSignAndSubmitTransactionFeature } from './lineraSignAndSubmitTransaction'
 import { LineraSignMessageFeature } from './lineraSignMessage'
 import { LineraGetAccountFeature } from './lineraGetAccount'
 import { LineraConnectFeature } from './lineraConnect'
@@ -20,7 +19,6 @@ export type LineraFeatures = LineraConnectFeature &
   LineraSignMessageFeature &
   //LineraChangeNetworkFeature is optional
   Partial<LineraChangeNetworkFeature> &
-  LineraSignAndSubmitTransactionFeature &
   LineraDisconnectFeature
 
 /**
@@ -40,7 +38,6 @@ export type WalletWithRequiredFeatures = WalletWithFeatures<
  */
 export type MinimallyRequiredFeatures = LineraFeatures
 
-export * from './lineraSignAndSubmitTransaction'
 export * from './lineraSignMessage'
 export * from './lineraGetAccount'
 export * from './lineraConnect'

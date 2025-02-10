@@ -1,5 +1,5 @@
 {
-  "name": "@todo/wallet-standard",
+  "name": "@nightlylabs/linera-wallet-standard",
   "description": "Linera wallet standard",
   "version": "0.1.0",
   "license": "Apache-2.0",

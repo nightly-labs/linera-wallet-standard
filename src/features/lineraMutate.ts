@@ -1,26 +1,26 @@
 import { AppId } from '../misc'
 
 /** Version of the feature. */
-export type MutateVersion = '1.0.0'
+export type LineraMutateVersion = '1.0.0'
 
 /** Name of the feature. */
-export const MutateNamespace = 'linera:mutate'
+export const LineraMutateNamespace = 'linera:mutate'
 
-export type MutateFeature = {
+export type LineraMutateFeature = {
   /** Namespace for the feature. */
-  [MutateNamespace]: {
+  [LineraMutateNamespace]: {
     /** Version of the feature API. */
-    version: MutateVersion
-    mutate: MutateMethod
+    version: LineraMutateVersion
+    mutate: LineraMutateMethod
   }
 }
 
-export type MutateMethod = (input: MutateInput) => Promise<MutateOutput>
+export type LineraMutateMethod = (input: LineraMutateInput) => Promise<LineraMutateOutput>
 
-export type MutateInput = {
+export type LineraMutateInput = {
   appId: AppId
   query: string
   variables?: object
 }
 
-export type MutateOutput = any
+export type LineraMutateOutput = any

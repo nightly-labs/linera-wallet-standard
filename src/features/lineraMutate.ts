@@ -19,7 +19,7 @@ export type MutateMethod = (input: MutateInput) => Promise<MutateOutput>
 
 export type MutateInput = {
   appId: AppId
-  mutate: string
+  query: string
   variables?: object
 }
 

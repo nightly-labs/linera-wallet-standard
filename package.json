@@ -1,7 +1,7 @@
 {
   "name": "@nightlylabs/linera-wallet-standard",
   "description": "Linera wallet standard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "Apache-2.0",
   "main": "dist/common/index.js",
   "module": "dist/esm/index.mjs",

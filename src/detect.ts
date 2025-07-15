@@ -16,6 +16,7 @@ const REQUIRED_FEATURES: (keyof MinimallyRequiredFeatures)[] = [
   'linera:network',
   'linera:onAccountChange',
   'linera:onNetworkChange',
+  'linera:onNotification',
   'linera:signMessage'
 ]
 

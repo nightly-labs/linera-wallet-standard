@@ -9,6 +9,7 @@ import { LineraDisconnectFeature } from './lineraDisconnect'
 import { LineraChangeNetworkFeature } from './lineraChangeNetwork'
 import { LineraMutateFeature } from './lineraMutate'
 import { LineraQueryFeature } from './lineraQuery'
+import { LineraOnNotificationFeature } from './lineraOnNotification'
 
 /**
  * Wallet Standard features that are unique to Linera, and that all Linera wallets are expected to implement.
@@ -18,6 +19,7 @@ export type LineraFeatures = LineraConnectFeature &
   LineraGetNetworkFeature &
   LineraOnAccountChangeFeature &
   LineraOnNetworkChangeFeature &
+  LineraOnNotificationFeature &
   LineraSignMessageFeature &
   LineraMutateFeature &
   LineraQueryFeature &
@@ -48,6 +50,7 @@ export * from './lineraConnect'
 export * from './lineraGetNetwork'
 export * from './lineraOnAccountChange'
 export * from './lineraOnNetworkChange'
+export * from './lineraOnNotification'
 export * from './lineraChangeNetwork'
 export * from './lineraDisconnect'
 export * from './lineraMutate'
